@@ -1,0 +1,13 @@
+
+add_executable(Restoration TestRestoration.cpp)
+add_executable(WetnessDryness SimulationWetnessDryness.cpp)
+add_executable(Pressure SimulationPressure.cpp)
+add_executable(Registration SimulationRegistration.cpp)
+add_executable(LinearFiltering SimulationLinearFiltering.cpp)
+add_executable(Geometry SimulationGeometry.cpp)
+target_link_libraries(Restoration  PUBLIC Fingerprint ${OpenCV_LIBS})
+target_link_libraries(WetnessDryness  PUBLIC Fingerprint ${OpenCV_LIBS})
+target_link_libraries(Pressure PUBLIC Fingerprint ${OpenCV_LIBS})
+target_link_libraries(Registration PUBLIC Fingerprint ${OpenCV_LIBS})
+target_link_libraries(LinearFiltering PUBLIC Fingerprint ${OpenCV_LIBS})
+target_link_libraries(Geometry PUBLIC Fingerprint ${OpenCV_LIBS})
